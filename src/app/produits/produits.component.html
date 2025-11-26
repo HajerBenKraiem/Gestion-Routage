@@ -1,0 +1,48 @@
+<h2>Fiche Produit</h2>
+
+<form #f="ngForm" (ngSubmit)="validerProduit()">
+
+  <label>Id:</label>
+  <input type="text" [(ngModel)]="produitCourant.id" name="id"><br>
+
+  <label>Code:</label>
+  <input type="text" [(ngModel)]="produitCourant.code" name="code"><br>
+
+  <label>Désignation:</label>
+  <input type="text" [(ngModel)]="produitCourant.designation" name="designation"><br>
+
+  <label>Prix:</label>
+  <input type="number" [(ngModel)]="produitCourant.prix" name="prix"><br>
+
+  <button type="submit">Valider</button>
+</form>
+
+<br>
+
+<h2>liste des produits</h2>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Code</th>
+      <th>Désignation</th>
+      <th>Prix</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let p of produits">
+      <td>{{ p.id }}</td>
+      <td>{{ p.code }}</td>
+      <td>{{ p.designation }}</td>
+      <td>{{ p.prix }}</td>
+
+      <td>
+        <button (click)="editerProduit(p)">Éditer</button>
+        <button (click)="supprimerProduit(p)">Supprimer</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

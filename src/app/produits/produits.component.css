@@ -1,0 +1,59 @@
+/* ===== TITRES ===== */
+h1, h2 {
+  font-family: "Times New Roman", serif;
+  font-weight: bold;
+}
+
+/* ===== FORMULAIRE ===== */
+form {
+  margin-bottom: 40px;
+  font-family: Arial, sans-serif;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 4px;
+  width: 180px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 4px 10px;
+  font-size: 14px;
+  border: 1px solid #888;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+/* ===== TABLEAU ===== */
+table {
+  border-collapse:collapse,;
+  width: 40%;
+  font-family: Arial;
+   border: none;
+}
+
+th, td {
+  border: none;
+  padding: 6px 10px;
+}
+
+thead {
+ 
+  font-weight: normal;
+}
+
+td button {
+  margin-right: 4px;
+}
